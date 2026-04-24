@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark sticky-top">
+       <div class="container-fluid"></div>
+       <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.html">Classmates System</a>
+    <div class="navbar-nav">
+      <a class="nav-link" href="attendance_checker.html">Attendance Checker</a>
+      <a class="nav-link" href="#"> Class Photos of activities</a>
+    </div>
+    </a>
+        </nav>
+</head>
+<body>
+    <h1 class="mb-4">Attendance Tracker</h1>
+        <form>
+            <label for="AttendanceDropdown">Select Month</label>
+            <select class="form-select" id="AttendanceDropdown">
+                <option value="" selected disabled>Select the month...</option>
+                <option value="0">Jan</option>
+                <option value="1">Feb</option>
+                <option value="2">Mar</option>
+                <option value="3">Apr</option>
+                <option value="4">May</option>
+                <option value="5">Aug</option>
+                <option value="6">Sep</option>
+                <option value="7">Oct</option>
+                <option value="8">Nov</option>
+                <option value="9">Dec</option>
+            </select><br>
+
+            <label for="input2">Absences</label>
+            <input type="number" class="form-control" id="input2" placeholder="Enter the number of absences..."><br>
+
+            <input type="button" py-click="attendance_graph" value="Submit">
+        </form>
+
+                <div id="output"></div>
+
+ <py-script type="py" src="atc.py"></py-script>
+</body>
+</html>
