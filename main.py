@@ -13,7 +13,7 @@ previousClassmate = [
     Addclassmate("Enzo", "Ruby", "PE"),
     Addclassmate("Tarcisus", "Ruby", "PE"),
     Addclassmate("Zakari", "Ruby", "Math"),
-    Addclassmate("Kobu", "Ruby", "CAT"),
+    Addclassmate("Koby", "Ruby", "CAT"),
     Addclassmate("Bryce", "Ruby", "ICT"),
     ]
 
