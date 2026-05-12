@@ -11,7 +11,7 @@ class Addclassmate:
         return (f"Hi! I am {self.name} from {self.section}! My favorite subject is {self.subject}.")
 previousClassmate = [
     Addclassmate("Enzo", "Ruby", "PE"),
-    Addclassmate("Tarcisus", "Ruby", "PE"),
+    Addclassmate("Tarcisius", "Ruby", "PE"),
     Addclassmate("Zakari", "Ruby", "Math"),
     Addclassmate("Koby", "Ruby", "CAT"),
     Addclassmate("Bryce", "Ruby", "ICT"),
