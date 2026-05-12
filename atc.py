@@ -11,8 +11,8 @@ plt.plot([0, 1], [0, 1])
 plt.close()
 
 
-months = np.array(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
-absences = np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+months = np.array(['MON', 'TUES', 'WED', 'THURS', 'FRI'])
+absences = np.array([0, 0, 0, 0, 0])
 
 def attendance_graph(e):
     months_index = int(document.getElementById('AttendanceDropdown').value)
@@ -24,7 +24,7 @@ def attendance_graph(e):
     ax.plot(months, absences, marker='o', color='blue')
 
     ax.set_title("Attendance Tracker")
-    ax.set_xlabel('Months')
+    ax.set_xlabel('Days')
     ax.set_ylabel('Absences')
     ax.grid(linestyle='-', alpha=0.5)
 
